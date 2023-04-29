@@ -177,8 +177,8 @@ while True:
             t.left(68)
             t.circle(10)
             
-##  # sunny - city (cafe) ##
-        '''
+##  # sunny - city (cafe) #
+        
     if weather == 'sunny' and location == 'city':   
         turtle.bgcolor("light blue")
     
@@ -188,7 +188,143 @@ while True:
         t.color("yellow")
         t.pensize(60)
         t.circle(20)
-        '''
+        
+        t.up()
+        t.goto(-350,-300)
+        t.down()
+        t.pensize(200)
+        t.color("black")
+        t.forward(700)
+
+        #building1
+        t.up()
+        t.goto(-300, -205)
+        t.down()
+        t.left(90)
+        t.pensize(10)
+        t.color("DarkGray")
+        t.begin_fill()
+        t.forward(310)
+        t.right(90)
+        t.forward(100)
+        t.right(90)
+        t.forward(310)
+        t.right(90)
+        t.forward(100)
+        t.end_fill()
+        #building2
+        t.up()
+        t.goto(-175, -205)
+        t.down()
+        t.pensize(10)
+        t.color("azure3")
+        t.begin_fill()
+        t.right(90)
+
+        t.forward(280)
+        t.right(90)
+        t.forward(100)
+        t.right(90)
+        t.forward(280)
+        t.right(90)
+        t.forward(100)
+        t.end_fill()
+        #building3
+        t.up()
+        t.goto(-60, -205)
+        t.down()
+        t.pensize(10)
+        t.color("cornsilk4")
+        t.begin_fill()
+        t.right(90)
+
+        t.forward(350)
+        t.right(90)
+        t.forward(100)
+        t.right(90)
+        t.forward(350)
+        t.right(90)
+        t.forward(100)
+        t.end_fill()
+        #building4
+        t.up()
+        t.goto(80, -205)
+        t.down()
+        t.pensize(10)
+        t.color("DarkGray")
+        t.begin_fill()
+        t.right(90)
+        
+        t.forward(200)
+        t.right(90)
+        t.forward(100)
+        t.right(90)
+        t.forward(200)
+        t.right(90)
+        t.forward(100)
+        t.end_fill()
+        #building5
+        t.up()
+        t.goto(20, -210)
+        t.down()
+        t.pensize(10)
+        t.color("azure3")
+        t.begin_fill()
+        t.right(90)
+
+        t.forward(90)
+        t.right(90)
+        t.forward(110)
+        t.right(90)
+        t.forward(90)
+        t.right(90)
+        t.forward(110)
+        t.end_fill()
+        #building6
+        t.up()
+        t.goto(200, -205)
+        t.down()
+        t.pensize(10)
+        t.color("burlywood")
+        t.begin_fill()
+        t.right(90)
+
+        t.forward(280)
+        t.right(90)
+        t.forward(100)
+        t.right(90)
+        t.forward(280)
+        t.right(90)
+        t.forward(100)
+        t.end_fill()
+        
+        #car1
+        t.up()
+        t.goto(-286,-290)
+        t.down()
+        t.color('red')
+        
+        for _ in range (2):
+            t.circle(5,90)
+            t.circle(5/2,90)
+
+        t.up()
+        t.goto(-260,-280)
+        t.down()
+        t.right(20)
+        t.begin_fill()
+        for _ in range (2):
+            t.circle(15,90)
+            t.circle(15/2,90)
+    
+        t.up()
+        t.goto(-245,-290)
+        t.down()
+        t.right(20)
+        t.end_fill()
+        for _ in range (2):
+            t.circle(5,90)
+            t.circle(5/2,90)
         
         
         
