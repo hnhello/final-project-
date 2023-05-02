@@ -1,10 +1,10 @@
-# final-project-
 import turtle
 t = turtle.Turtle()
 
 while True:
     weather = input("Enter 'sunny' or 'rainy' or 'snowy':")
-    
+    t.speed(5)
+   
     if weather == 'sunny':
         location = input("Enter 'beach' or 'mountain' or 'city':")
     if weather == 'sunny' and location == 'beach':
@@ -69,11 +69,11 @@ while True:
         t.goto(140,-220)
         t.down()
         t.left(180)
-        t.forward(80)
+        t.forward(100)
 
         t.hideturtle()
         
-    
+        exit()
     #sunny - mountain
     if weather == 'sunny' and location == 'mountain':
         turtle.bgcolor("light blue")
@@ -176,9 +176,9 @@ while True:
             t.color("coral2")
             t.left(68)
             t.circle(10)
-            
-##  # sunny - city (cafe) #
+        exit()
         
+##  # sunny - city (cafe) ##
     if weather == 'sunny' and location == 'city':   
         turtle.bgcolor("light blue")
     
@@ -188,7 +188,7 @@ while True:
         t.color("yellow")
         t.pensize(60)
         t.circle(20)
-        
+
         t.up()
         t.goto(-350,-300)
         t.down()
@@ -325,8 +325,7 @@ while True:
         for _ in range (2):
             t.circle(5,90)
             t.circle(5/2,90)
-        
-        
+        exit()
         
 #rainy day
     if weather == 'rainy':
@@ -427,7 +426,7 @@ while True:
         t.pensize(400)
         t.forward(600)
         
-    
+        exit()
 #snowy
     if weather == 'snowy':
         turtle.bgcolor("light grey")
@@ -584,6 +583,8 @@ while True:
         t.pensize(300)
         t.left(10)
         t.forward(600)
+
+        exit()
         
     if weather != 'sunny' or weather != 'rainy' or weather != 'snowy':
         print('try again')
